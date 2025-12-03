@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University website Design </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">  
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">    
+</head>
+<body>
+<section class="sub-header">
+    <nav>
+        <a href="index.html"><img src="image/logo.png"></a>
+        <div class="nav-links" id="navlinks">
+            <i class="fa fa-times" onclick="hideMenu()" ></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="course.html">COURSE</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Our Courses</h1>
+</section>
+
+<!-- course -->
+
+<section class="course">
+    <h1>Courses We Offer</h1>
+    <p>Choose from a wide range of academic programs designed to help you succeed in today’s fast-changing world.</p>
+
+    <div class="row">
+        <div class="course-col">
+            <h3>Intermediate</h3>
+            <p>Build a strong foundation with our intermediate courses that prepare you for advanced studies and real-world challenges.</p>
+        </div>
+        <div class="course-col">
+            <h3>Degree</h3>
+            <p>Our undergraduate degree programs blend theory and practical experience, helping students achieve excellence in their chosen fields.</p>
+        </div>
+        <div class="course-col">
+            <h3>Post Graduation</h3>
+            <p>Advance your career with specialized postgraduate programs that focus on research, innovation, and leadership skills.</p>
+        </div>
+    </div>
+
+
+</section>
+
+<!-- facilities -->
+<section class="facilities">
+    <h1>Our Facilities</h1>
+    <p>We provide world-class infrastructure and services to ensure every student has the best learning environment possible.</p>
+
+    <div class="row">
+        <div class="facilities-col">
+            <img src="image/library.png">
+            <h3>World Class Library</h3>
+            <p>A quiet, resource-rich space with thousands of books and digital materials.</p>
+        </div>
+        <div class="facilities-col">
+            <img src="image/basketball.png">
+            <h3>Largest Play Ground</h3>
+            <p>Promoting fitness, teamwork, and sportsmanship through various athletic facilities.</p>
+        </div>
+        <div class="facilities-col">
+            <img src="image/cafeteria.png">
+            <h3>Tasty and Healthy Food</h3>
+            <p>Our cafeteria serves nutritious meals that keep students energized and focused.</p>
+        </div>
+    </div>
+
+
+</section>    
+<!-- footer -->
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Located in the heart of Gujarat, we are committed to providing inclusive, innovative, and quality education that empowers every student to lead and succeed.</p>
+
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+    <p>Made with <i class="fa fa-heart-o"></i> by Saloni Patel</p>
+    <p>&copy;2025 Saloni Patel | Designed for Educational Purpose</p>
+
+</section>
+
+
+<!-- javascript for toggle menu -->
+<script>
+
+    var navlinks = document.getElementById("navlinks");
+    function showMenu(){
+        navlinks.style.right = "0";
+    }
+    function hideMenu(){
+        navlinks.style.right = "-200px";
+    }
+
+</script>
+
+</body>
+</html>
